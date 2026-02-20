@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arithmetic Operations</title>
+        <script>
+            function calculate(){
+                let n1 = parseFloat(document.getElementById("num1").value);
+                let n2 = parseFloat(document.getElementById("num2").value);
+                let res = document.getElementById("result").innerHTML = 
+                n1 + " + " + n2 + " = " + (n1+n2) + "<br>" +
+                n1 + " - " + n2 + " = " + (n1-n2) + "<br>" +
+                n1 + " * " + n2 + " = " + (n1*n2) + "<br>" +
+                n1 + " / " + n2 + " = " + (n1/n2) + "<br>" +
+                n1 + " % " + n2 + " = " + (n1%n2) ;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p>Enter number-1:</p>
+        <input type="number" id="num1">
+        <p>Enter number-2:</p>
+        <input type="number" id="num2">
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+    </body>
+</html>
