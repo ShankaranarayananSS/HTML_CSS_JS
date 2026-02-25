@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logical Operations</title>
+    <script>
+      //let t = 1, f = 0;
+      let t = true, f = false;
+      
+      function andop(){
+        let res = document.getElementById("result").innerHTML = 
+          "AND OPERATOR <br>" +
+          t + " && " + t + " = " + (t&&t) + "<br>" +
+          t + " && " + f + " = " + (t&&f) + "<br>" +
+          f + " && " + t + " = " + (f&&t) + "<br>" +
+          f + " && " + f + " = " + (f&&f) ;
+      }
+      
+      function orop(){
+        let res = document.getElementById("result").innerHTML = 
+          "OR OPERATOR <br>" +
+          t + " || " + t + " = " + (t||t) + "<br>" +
+          t + " || " + f + " = " + (t||f) + "<br>" +
+          f + " || " + t + " = " + (f||t) + "<br>" +
+          f + " || " + f + " = " + (f||f) ;
+      }
+      
+      function notop(){
+        let res = document.getElementById("result").innerHTML = 
+          "NOT OPERATOR <br>" +
+          " ! " + t + " = " + (!t) + "<br>" +
+          " ! " + f + " = " + (!f) ;
+      }
+    </script>
+  </head>
+  
+  <body>
+    <p id="result"></p>
+    <button onclick="andop()">Logical AND</button>
+    <button onclick="orop()">Logical OR</button>
+    <button onclick="notop()">Logical NOT</button>
+  </body>
+</html>
