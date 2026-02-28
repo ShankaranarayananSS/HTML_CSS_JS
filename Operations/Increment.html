@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Increment and Decrement</title>
+    <script>
+      let num = 0;
+      function inc(){
+        num++;
+        document.getElementById("txt").innerHTML = num;
+      }
+      
+      function dec(){
+        num--;
+        document.getElementById("txt").innerHTML = num;
+      }
+    </script>
+  </head>
+  
+  <body>
+    <p id="txt">0</p>
+    <button onclick="inc()">Increment</button>
+    <button onclick="dec()">Decrement</button>
+  </body>
+</html>
