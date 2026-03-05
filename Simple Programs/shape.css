@@ -1,0 +1,29 @@
+head, body{
+  font-size: 12;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.box_outside{
+  min-width: 100vb;
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_inside{
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  
+  margin: 10px;
+  padding: 10px;
+  
+  border: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: #000000;
+  
+  background-color: #ff00ff80;
+}
