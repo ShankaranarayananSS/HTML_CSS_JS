@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+}
+
+.box_outside{
+  min-height: 100vh;
+  
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box_inside{
+  width: 250px;
+  height: 250px;
+  border: 10px solid;
+  border-radius: 15px;
+  
+  display: flex;
+}
+
+.box_1{
+  width: 50%;
+  height: 100%;
+  background-color: #ff0000;
+}
+
+.box_2{
+  width: 50%;
+  height: 100%;
+  background-color: #00ff00;
+}
