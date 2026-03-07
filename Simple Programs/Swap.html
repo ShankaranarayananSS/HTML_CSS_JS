@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="swap.css">
+    <title>Swap</title>
+    <script>
+      let color1 = "#ff0000";
+      let color2 = "#00ff00";
+      function swap(){
+        let temp = color1;
+        color1 = color2;
+        color2 = temp;
+        
+        document.getElementById("b1").style.background=color1;
+        document.getElementById("b2").style.background=color2;
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="box_outside">
+      <div class="box_inside">
+        <div id="b1" class="box_1"></div>
+        <div id="b2" class="box_2"></div>                
+      </div>
+      <button onclick="swap()">Swap</button>
+    </div>
+  </body>
+</html>
