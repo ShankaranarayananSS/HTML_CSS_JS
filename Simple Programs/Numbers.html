@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Numbers</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        min-width: 100vb;
+        min-height: 100vh;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .box{
+        margin: 5px;
+        padding: 5px;
+        border: #000000 solid;
+        border-width: 5px;
+        border-radius: 5px;
+        
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    
+    <script>
+      function cal_sqr(){
+        let n = parseInt(document.getElementById("num").value);
+        alert("Square of number: " + n*n);
+      }
+      
+      function cal_cub(){
+        let n = parseInt(document.getElementById("num").value);
+        alert("Cube of number: " + n*n*n);
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="box">
+      <p>Enter number:</p>
+      <input type="number" value="0" id="num">
+      <button onclick="cal_sqr()">Square</button>
+      <button onclick="cal_cub()">Cube</button>
+    </div>
+  </body>
+</html>
