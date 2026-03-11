@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Interest</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        
+        min-width: 100vw;
+        min-height: 100vh;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .box_outside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      
+      .txts{
+        margin: 5px;
+        padding: 0px;
+      }
+    </style>
+    
+    <script>
+      function interest(){
+        let p = parseInt(document.getElementById("p").value);
+        let n = parseInt(document.getElementById("n").value);
+        let r = parseInt(document.getElementById("r").value);
+        alert("Simple Interest = " + (p*n*r)/100);
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="box_outside">
+      <div>
+        <p class="txts">Enter Principle Amount:</p>
+        <input type="number" id="p">
+      </div>
+      
+      <div>
+        <p class="txts">Enter No. of Years:</p>
+        <input type="number" id="n">
+      </div>
+      
+      <div>
+        <p class="txts">Enter Rate of Percentage:</p>
+        <input type="number" id="r">
+      </div>
+      
+      <button onclick="interest()">Calculate Simple Interest</button>
+    </div>
+  </body>
+</html>
