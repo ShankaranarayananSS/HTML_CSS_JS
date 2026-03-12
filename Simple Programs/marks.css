@@ -1,0 +1,34 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  
+  min-width: 100vw;
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_outside{
+  margin: 5px;
+  padding: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  border: #000000 solid;
+  border-width: 5px;
+  border-radius: 20px;
+}
+
+.box_inside{
+  display: flex;
+  flex-direction: row;
+}
+
+.box_button{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
