@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marks</title>
+    <link rel="stylesheet" href="marks.css">
+    <script src="marks.js"></script>
+  </head>
+  
+  <body>
+    <div class="box_outside">
+      <div class="box_inside">
+        <p>Enter Number-1:</p>
+        <input type="range" min="0" max="100" value="0" id="m1"
+          oninput="document.getElementById('mark1').innerHTML = this.value">
+        <p id="mark1">0</p>
+      </div>
+      
+      <div class="box_inside">
+        <p>Enter Number-2:</p>
+        <input type="range" min="0" max="100" value="0" id="m2"
+          oninput="document.getElementById('mark2').innerHTML = this.value">
+        <p id="mark2">0</p>
+      </div>
+      
+      <div class="box_inside">
+        <p>Enter Number-3:</p>
+        <input type="range" min="0" max="100" value="0" id="m3"
+          oninput="document.getElementById('mark3').innerHTML = this.value">
+        <p id="mark3">0</p>
+      </div>
+      
+      <div class="box_inside">
+        <p>Enter Number-4:</p>
+        <input type="range" min="0" max="100" value="0" id="m4"
+          oninput="document.getElementById('mark4').innerHTML = this.value">
+        <p id="mark4">0</p>
+      </div>
+      
+      <div class="box_inside">
+        <p>Enter Number-5:</p>
+        <input type="range" min="0" max="100" value="0" id="m5"
+          oninput="document.getElementById('mark5').innerHTML = this.value">
+        <p id="mark5">0</p>
+      </div>
+      
+      <div class="box_button">
+        <button onclick="cal_tot()">Calculate Total</button>
+        <button onclick="cal_avg()">Calculate Average</button>
+      </div>
+    </div>
+  </body>
+</html>
