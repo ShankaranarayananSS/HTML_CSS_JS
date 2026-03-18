@@ -1,0 +1,23 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  
+  min-width: 100vw;
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_outside{
+  margin: 5px;
+  padding: 5px;
+  
+  border: #000000 solid;
+  border-width: 5px;
+  border-radius: 15px;
+  
+  display: flex;
+  flex-direction: column;
+}
